@@ -39,3 +39,7 @@ Desktop and 390px browser checks covered the landing page, capability filtering,
 empty results, and illustrative examples without horizontal overflow. The live
 Space rendered successfully after publication. All seven existing external
 website/research/profile links returned HTTP 200.
+
+The static app host also served matching catalog, connection guide, JavaScript, and CSS bytes. Hugging Face adds its own environment-initialization script to served HTML; the repository download of `index.html` remains an exact match.
+
+Website cross-link implementation: [RQM-Storefront PR #71](https://github.com/RQM-Technologies-dev/RQM-Storefront/pull/71).
