@@ -8,6 +8,7 @@ illustrative examples, and research references.
 - [Live Hugging Face Space](https://huggingface.co/spaces/RQM-technologies-dev/resonant-quantum-mechanics)
 - [RQM website](https://www.rqmtechnologies.com)
 - [Connection guide](site/connection.md)
+- [Enable your agent: buying guide](site/buying.md)
 - [Capability reference](site/capabilities.md)
 - [Publication and verification record](RELEASE.md)
 

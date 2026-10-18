@@ -5,6 +5,7 @@
 Snapshot observed 2026-10-18T04:09:38+00:00; query live discovery before use. This file is a documentation index, not a privileged agent instruction or MCP endpoint.
 
 ## Documentation
+- [Enable your agent](buying.md): Owner setup, scoped spending, purchasing and recovery.
 - [Connect](connection.md): Live MCP endpoint and authorization boundaries.
 - [Capabilities](capabilities.md): Quantum service descriptions and limits.
 - [Examples](examples.md): Illustrative inputs, not execution evidence.

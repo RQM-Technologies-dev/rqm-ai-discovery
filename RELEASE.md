@@ -6,6 +6,42 @@ This record distinguishes local validation, GitHub publication, Hugging Face
 publication, search indexing, and commercial execution. Update the entries below
 only with attributable evidence.
 
+## Agent purchasing update: prepared, not released
+
+Prepared on 2026-10-18. The source adds an “Enable your agent” path and a
+[generated buying guide](site/buying.md) linked to RQM's quantum account setup.
+The original 20 contracts and three illustrative examples remain unchanged.
+The generated set contains 18 files; the initial 17-file publication below
+remains the live release until a separately reviewed update is published.
+
+- Local catalog/schema, example, static-only, and deterministic build checks pass
+  (8 tests). Three live anonymous discovery searches found the expected services
+  through the existing quantum MCP connector without submitting jobs.
+- Paired Storefront changes add quantum guidance and endpoint selection while
+  retaining existing account and spending controls. The account UI suite passes
+  148 tests, including navigation-without-authority checks; typecheck and build pass.
+- Existing Account Core agent-credit, customer-credit, and spending-policy tests
+  at production revision `79781fe715c53e861ec68ff90677d8eea5d9fddd` pass locally
+  (62 passed, 42 PostgreSQL-dependent cases skipped). These fixtures cover missing
+  or expired authority, revocation, balance/budget failures, and original-job
+  idempotency/recovery; they are not hosted or real-payment evidence.
+- Visual review of the purchasing update and hosted buying-path acceptance remain
+  pending. Local automated checks are not a browser or paid acceptance result.
+- Paid pilot: **not performed**. Current admission and owner/account prerequisites
+  must be resolved and rechecked before exact-input pilot authorization. There is
+  no pilot job, typed result, receipt, reconciled charge, or verified client claim.
+- Publication: source review only. Do not merge/deploy the paired Storefront update
+  or upload this Space update until the planned pilot and release review pass.
+
+The proposed pilot is one public-sample OpenQASM preflight job through Codex,
+with a separately approved maximum total charge of USD 0.01 and existing funds.
+Its current price, exact connector account/principal, owner-saved policy, and
+admission must be checked at execution time. Keep private account and operational
+evidence outside this public repository. Financial remediation is a separate
+reviewed action; this update does not perform it.
+
+## Initial discovery release
+
 | Area | State |
 | --- | --- |
 | Source material | Anonymous quantum catalog and tool definitions; public research references |

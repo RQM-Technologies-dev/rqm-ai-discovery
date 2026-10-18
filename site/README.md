@@ -21,6 +21,8 @@ Public capability record, observed 2026-10-18T04:09:38+00:00.
 
 ## Start here
 
+- [Enable your agent](buying.md)
+- [Quantum account setup](https://www.rqmtechnologies.com/account/tools?product=quantum)
 - [Connection guide](connection.md)
 - [20 quantum capability descriptions](capabilities.md)
 - [Illustrative discovery examples](examples.md)
