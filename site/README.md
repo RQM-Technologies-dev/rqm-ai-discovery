@@ -6,7 +6,7 @@ colorTo: green
 sdk: static
 app_file: index.html
 pinned: false
-short_description: Quantum capability discovery, evidence, and direct RQM connection
+short_description: Quantum contracts, evidence, and direct RQM connection
 tags:
   - quantum-computing
   - openqasm
