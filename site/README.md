@@ -2,7 +2,7 @@
 title: Resonant Quantum Mechanics
 emoji: ⚛️
 colorFrom: gray
-colorTo: green
+colorTo: blue
 sdk: static
 app_file: index.html
 pinned: false
