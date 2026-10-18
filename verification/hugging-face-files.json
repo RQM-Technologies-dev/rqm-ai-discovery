@@ -1,0 +1,87 @@
+[
+  {
+    "file": "README.md",
+    "matches": true,
+    "sha256": "04b28b4cd7a375b7c8146c8d7b4086863988bba4f556b62d95bb9741c52affcc"
+  },
+  {
+    "file": "app.js",
+    "matches": true,
+    "sha256": "8cdf7a73d6602971f541d951d7e1450eff6f58192105730e5a29ff5c876fcdf1"
+  },
+  {
+    "file": "capabilities.md",
+    "matches": true,
+    "sha256": "e7e336eee538cf6e80cff594b032e5c76a7f23e95147a221dbb7bc4a1e5515ae"
+  },
+  {
+    "file": "catalog-schema.json",
+    "matches": true,
+    "sha256": "d522b8aeac5f1be6d54378c27175619bcc40e94741dfce5774e8ee4a197f2948"
+  },
+  {
+    "file": "catalog.json",
+    "matches": true,
+    "sha256": "10d5aea3265c886401ac2dd88f96cdbec6361c84e406944a95ab2e56326c0287"
+  },
+  {
+    "file": "connection.md",
+    "matches": true,
+    "sha256": "a3fe969e2de83bec554289b2e758d74895414f3c5fcdbb1992a1cf74635f4bae"
+  },
+  {
+    "file": "examples.json",
+    "matches": true,
+    "sha256": "b7389a7c1e677544f4aa389c6fcd06640a06fcd424d380c817003832a12e1756"
+  },
+  {
+    "file": "examples.md",
+    "matches": true,
+    "sha256": "a2635ef2fe6200f989cca109940b626580c8e936d2636dfdc8307adf75c0e89f"
+  },
+  {
+    "file": "index.html",
+    "matches": true,
+    "sha256": "e23373f2f66c858435199609960a0947799b0b8c93c59499e618d297d4ea4ba8"
+  },
+  {
+    "file": "llms.txt",
+    "matches": true,
+    "sha256": "9cf898b068dbdba4de4a1662eb5569aef5f0afac9a9719821722eb9d3408b8ce"
+  },
+  {
+    "file": "organization.json",
+    "matches": true,
+    "sha256": "e0bf42e68baf069891fc7c7034831f93aa3e9b6d80d767cfc9b37a5003ebe9e2"
+  },
+  {
+    "file": "profile.md",
+    "matches": true,
+    "sha256": "6212cc7de26795c1c40ad3654816506bc18d12dbc1a290c67f80789cd2cdf33a"
+  },
+  {
+    "file": "provenance.json",
+    "matches": true,
+    "sha256": "e05d1b6100d6c0a277b40e864f640e586e184b9d0639fe0cc5fb0f12f2f28621"
+  },
+  {
+    "file": "research.md",
+    "matches": true,
+    "sha256": "6c30c410ff021db9d733142af39b17dd4a441f9b2f8c642878ef7149ec73cd83"
+  },
+  {
+    "file": "source.json",
+    "matches": true,
+    "sha256": "579d97885642e793658c439a8324c4fb40766ba19a37100256badec06368d5b9"
+  },
+  {
+    "file": "style.css",
+    "matches": true,
+    "sha256": "ff32aaf5878159ce810d98d836ec60371ce5fe494bc46b84a8b62c314f27ebc7"
+  },
+  {
+    "file": "tools.json",
+    "matches": true,
+    "sha256": "9a4ea3f47ecff32f3dacb53902b63f7c07cb206390f8b2959fae53a5ff05ebcc"
+  }
+]

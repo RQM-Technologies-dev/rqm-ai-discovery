@@ -5,7 +5,7 @@ discovery hub. The site contains the original public quantum catalog, its public
 schema and tool definitions, source provenance, a direct connection guide, three
 illustrative examples, and research references.
 
-- [Hugging Face Space — publication pending account access](https://huggingface.co/spaces/RQM-technologies-dev/resonant-quantum-mechanics)
+- [Live Hugging Face Space](https://huggingface.co/spaces/RQM-technologies-dev/resonant-quantum-mechanics)
 - [RQM website](https://www.rqmtechnologies.com)
 - [Connection guide](site/connection.md)
 - [Capability reference](site/capabilities.md)
