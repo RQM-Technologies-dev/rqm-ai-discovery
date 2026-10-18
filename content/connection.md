@@ -3,6 +3,9 @@
 This hub publishes discovery material. Authentication, execution, spending policy,
 and receipts remain with RQM. No credentials or circuit submissions are collected here.
 
+For the owner setup and purchasing journey, read [Enable your agent](buying.md)
+and open [quantum agent setup](https://www.rqmtechnologies.com/account/tools?product=quantum).
+
 ## 1. Connect
 
 Add **Resonant Quantum Mechanics** to an MCP-compatible client using Streamable HTTP:
