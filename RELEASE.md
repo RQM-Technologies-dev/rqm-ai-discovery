@@ -13,6 +13,7 @@ only with attributable evidence.
 | Local validation | 8 tests passed; reproducible build; desktop and 390px browser QA; three anonymous service searches passed |
 | GitHub publication | Public source published; CI passed for `2a78e02b0125b4f11d9656188c9e840fe9b57be2` |
 | Hugging Face publication | Public static Space RUNNING at commit `6962555ad71a07542bc67c6aeed7f22379cda67a`; all 17 published files match the reviewed `site/` bytes |
+| Official website cross-links | PR #71 merged; production footer and `llms.txt` verified with links to the Space and canonical source |
 | Search indexing | Not established |
 | Paid execution | Not performed |
 | Hardware execution | Not performed |
@@ -42,4 +43,4 @@ website/research/profile links returned HTTP 200.
 
 The static app host also served matching catalog, connection guide, JavaScript, and CSS bytes. Hugging Face adds its own environment-initialization script to served HTML; the repository download of `index.html` remains an exact match.
 
-Website cross-link implementation: [RQM-Storefront PR #71](https://github.com/RQM-Technologies-dev/RQM-Storefront/pull/71).
+Website cross-links were published through [RQM-Storefront PR #71](https://github.com/RQM-Technologies-dev/RQM-Storefront/pull/71), merged at `2026-10-18T04:25:01Z` as `e6836d0f9473d448a378f098c4123566669809be`. Type checking, production build, and hosted PR checks passed. Vercel reported a successful production deployment. The live website footer's “Quantum AI Discovery” link points to the Space, and the public [agent reading index](https://www.rqmtechnologies.com/llms.txt) includes the Space, canonical GitHub source, and existing quantum connector endpoint with authorization boundaries.
