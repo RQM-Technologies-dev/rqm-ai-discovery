@@ -1,0 +1,708 @@
+{
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "anyOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "const": "rqm.jobs.agent-catalog.v1"
+        },
+        "surface": {
+          "type": "string",
+          "enum": [
+            "buyer_job",
+            "implementation_capability",
+            "research_evidence",
+            "all"
+          ]
+        },
+        "product": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "wave",
+                "quantum",
+                "robotics"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "descriptor_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "descriptors": {
+          "maxItems": 256,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "schema_version": {
+                "type": "string",
+                "const": "rqm.jobs.agent-service-descriptor.v1"
+              },
+              "product": {
+                "type": "string",
+                "enum": [
+                  "wave",
+                  "quantum",
+                  "robotics"
+                ]
+              },
+              "service_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[a-z0-9][a-z0-9._-]*$"
+              },
+              "service_version": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "readiness": {
+                "type": "string",
+                "enum": [
+                  "dark_candidate",
+                  "production_live",
+                  "advanced_only"
+                ]
+              },
+              "agent_discovery": {
+                "type": "object",
+                "properties": {
+                  "surface": {
+                    "type": "string",
+                    "enum": [
+                      "buyer_job",
+                      "implementation_capability",
+                      "research_evidence"
+                    ]
+                  },
+                  "agent_instruction": {
+                    "type": "string",
+                    "minLength": 8,
+                    "maxLength": 512
+                  },
+                  "use_when": {
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1024
+                    }
+                  },
+                  "do_not_use_when": {
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1024
+                    }
+                  },
+                  "tags": {
+                    "minItems": 1,
+                    "maxItems": 24,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 120
+                    }
+                  },
+                  "synonyms": {
+                    "minItems": 1,
+                    "maxItems": 24,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 160
+                    }
+                  },
+                  "keywords": {
+                    "minItems": 1,
+                    "maxItems": 32,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 120
+                    }
+                  },
+                  "accepted_formats": {
+                    "minItems": 1,
+                    "maxItems": 16,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 160
+                    }
+                  },
+                  "limits": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "$ref": "#/$defs/__schema0"
+                    }
+                  },
+                  "request_schema_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  "request_schema_digest": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "request_schema": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "$ref": "#/$defs/__schema0"
+                    }
+                  },
+                  "result_schema_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  "result_schema_digest": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "result_schema": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "$ref": "#/$defs/__schema0"
+                    }
+                  },
+                  "objective_outputs": {
+                    "minItems": 1,
+                    "maxItems": 24,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    }
+                  },
+                  "caller_next_step": {
+                    "type": "string",
+                    "minLength": 8,
+                    "maxLength": 512
+                  },
+                  "implementation_capability_ids": {
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+                    }
+                  },
+                  "outsourcing_advantage": {
+                    "type": "string",
+                    "minLength": 8,
+                    "maxLength": 1024
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "properties": {
+                      "identity": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 160
+                      },
+                      "revision": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 160
+                      },
+                      "applicability": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 1024
+                      },
+                      "limitations": {
+                        "minItems": 1,
+                        "maxItems": 16,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 512
+                        }
+                      }
+                    },
+                    "required": [
+                      "identity",
+                      "revision",
+                      "applicability",
+                      "limitations"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "claim_boundary": {
+                    "type": "string",
+                    "minLength": 8,
+                    "maxLength": 2048
+                  },
+                  "price_mechanism": {
+                    "type": "object",
+                    "properties": {
+                      "model": {
+                        "type": "string",
+                        "enum": [
+                          "fixed_per_request",
+                          "metered",
+                          "not_commercial"
+                        ]
+                      },
+                      "status": {
+                        "type": "string",
+                        "enum": [
+                          "binding_tariff",
+                          "prepared",
+                          "unproven"
+                        ]
+                      },
+                      "tariff_identity": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 160
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "currency": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "USD"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "billing_unit": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      }
+                    },
+                    "required": [
+                      "model",
+                      "status",
+                      "tariff_identity",
+                      "currency",
+                      "billing_unit"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "duration_limit": {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "type": "string",
+                        "enum": [
+                          "exact",
+                          "prepared",
+                          "unproven"
+                        ]
+                      },
+                      "maximum_ms": {
+                        "anyOf": [
+                          {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "timeout_behavior": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 512
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "maximum_ms",
+                      "timeout_behavior"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "positive_examples": {
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "example_id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 128
+                        },
+                        "request": {
+                          "type": "object",
+                          "propertyNames": {
+                            "type": "string"
+                          },
+                          "additionalProperties": {
+                            "$ref": "#/$defs/__schema0"
+                          }
+                        }
+                      },
+                      "required": [
+                        "example_id",
+                        "request"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "unsupported_examples": {
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "example_id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 128
+                        },
+                        "request": {
+                          "type": "object",
+                          "propertyNames": {
+                            "type": "string"
+                          },
+                          "additionalProperties": {
+                            "$ref": "#/$defs/__schema0"
+                          }
+                        }
+                      },
+                      "required": [
+                        "example_id",
+                        "request"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "surface",
+                  "agent_instruction",
+                  "use_when",
+                  "do_not_use_when",
+                  "tags",
+                  "synonyms",
+                  "keywords",
+                  "accepted_formats",
+                  "limits",
+                  "request_schema_id",
+                  "request_schema_digest",
+                  "request_schema",
+                  "result_schema_id",
+                  "result_schema_digest",
+                  "result_schema",
+                  "objective_outputs",
+                  "caller_next_step",
+                  "implementation_capability_ids",
+                  "outsourcing_advantage",
+                  "evidence",
+                  "claim_boundary",
+                  "price_mechanism",
+                  "duration_limit",
+                  "positive_examples",
+                  "unsupported_examples"
+                ],
+                "additionalProperties": false
+              },
+              "descriptor_digest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "schema_version",
+              "product",
+              "service_id",
+              "service_version",
+              "title",
+              "description",
+              "readiness",
+              "agent_discovery",
+              "descriptor_digest"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "operation_tools": {
+          "maxItems": 256,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "service_id": {
+                "type": "string"
+              },
+              "tool_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "service_id",
+              "tool_name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "interest_guidance": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "string",
+              "const": "rqm.quantum-interest-guidance.v1"
+            },
+            "intent_interpreter": {
+              "type": "string",
+              "const": "host_llm"
+            },
+            "server_role": {
+              "type": "string",
+              "const": "deterministic_contract_discovery"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "execution_authorized": {
+              "type": "boolean",
+              "const": false
+            },
+            "hardware_readiness": {
+              "type": "string",
+              "const": "not_established_by_discovery"
+            },
+            "routes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "interest": {
+                    "type": "string"
+                  },
+                  "clarification": {
+                    "type": "string"
+                  },
+                  "suitability": {
+                    "type": "string"
+                  },
+                  "classical_alternative": {
+                    "type": "string"
+                  },
+                  "candidates": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "service_id": {
+                          "type": "string"
+                        },
+                        "readiness": {
+                          "type": "string",
+                          "enum": [
+                            "dark_candidate",
+                            "production_live",
+                            "advanced_only"
+                          ]
+                        },
+                        "request_schema_id": {
+                          "type": "string"
+                        },
+                        "request_schema_digest": {
+                          "type": "string"
+                        },
+                        "required_inputs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "selection": {
+                          "type": "string",
+                          "const": "conditional_on_user_goal_inputs_and_descriptor_limits"
+                        }
+                      },
+                      "required": [
+                        "service_id",
+                        "readiness",
+                        "request_schema_id",
+                        "request_schema_digest",
+                        "required_inputs",
+                        "selection"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "interest",
+                  "clarification",
+                  "suitability",
+                  "classical_alternative",
+                  "candidates"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "schema_version",
+            "intent_interpreter",
+            "server_role",
+            "instructions",
+            "execution_authorized",
+            "hardware_readiness",
+            "routes"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema_version",
+        "surface",
+        "product",
+        "descriptor_count",
+        "descriptors",
+        "operation_tools",
+        "interest_guidance"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "const": "rqm.jobs.error.v1"
+        },
+        "code": {
+          "type": "string",
+          "enum": [
+            "AUTHENTICATION_REQUIRED",
+            "MACHINE_AUTHENTICATION_FAILED",
+            "MACHINE_AUTHORIZATION_FAILED",
+            "ACCOUNT_CORE_UNAVAILABLE",
+            "FEATURE_DISABLED",
+            "QUOTE_NOT_ENTITLED",
+            "QUOTE_IDEMPOTENCY_CONFLICT",
+            "QUOTE_NOT_AVAILABLE",
+            "QUOTE_REQUEST_INVALID",
+            "QUOTE_MISMATCH",
+            "PRICE_LIMIT_EXCEEDED",
+            "RUNTIME_LIMIT_EXCEEDED",
+            "ARTIFACT_PREFERENCE_UNAVAILABLE",
+            "INSUFFICIENT_BALANCE",
+            "RESERVATION_FAILED",
+            "PRODUCT_REJECTED",
+            "PRODUCT_UNAVAILABLE",
+            "JOB_NOT_FOUND",
+            "JOB_NOT_READY",
+            "JOB_ACCESS_DENIED",
+            "SETTLEMENT_FAILED",
+            "FUNDING_UNAVAILABLE",
+            "FUNDING_FAILED"
+          ]
+        },
+        "message": {
+          "type": "string"
+        },
+        "retryable": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "schema_version",
+        "code",
+        "message",
+        "retryable"
+      ],
+      "additionalProperties": false
+    }
+  ],
+  "$defs": {
+    "__schema0": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema0"
+          }
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/__schema0"
+          }
+        }
+      ]
+    }
+  }
+}

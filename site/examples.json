@@ -1,0 +1,107 @@
+[
+  {
+    "service_id": "openqasm3-preflight-v1",
+    "label": "Check before compilation",
+    "goal": "Assess a small OpenQASM 3 program before downstream compilation.",
+    "interpretation": "Inspect the returned go, no_go, or unsupported outcome, normalized source, warnings, and evidence. A go verdict applies only within the documented verifier scope; it is not hardware readiness.",
+    "tool_name": "quantum_openqasm3_preflight_v1",
+    "request": {
+      "source": "OPENQASM 3.0; qubit[1] q;"
+    },
+    "unsupported_example": {
+      "source": ""
+    },
+    "evidence_status": "illustrative_not_executed"
+  },
+  {
+    "service_id": "verified-circuit-optimization-v1",
+    "label": "Optimize with preservation",
+    "goal": "Ask for a smaller circuit while retaining the original unless preservation is verified.",
+    "interpretation": "Inspect outcome, candidate_withheld, fallback_status, original_hash, returned_hash, circuit, and report. Adopt a candidate only when the completed result verifies preservation. A fallback or unsupported result is not a verified optimization.",
+    "tool_name": "quantum_verified_circuit_optimization_v1",
+    "request": {
+      "backend": "generic",
+      "circuit": {
+        "instructions": [
+          {
+            "gate": {
+              "arity": 1,
+              "name": "x"
+            },
+            "targets": [
+              {
+                "index": 0
+              }
+            ]
+          },
+          {
+            "gate": {
+              "arity": 1,
+              "name": "x"
+            },
+            "targets": [
+              {
+                "index": 0
+              }
+            ]
+          }
+        ],
+        "num_qubits": 1,
+        "schema_version": "0.2"
+      },
+      "profile": "balanced"
+    },
+    "unsupported_example": {
+      "backend": "generic",
+      "circuit": {
+        "instructions": [],
+        "num_qubits": 4,
+        "schema_version": "0.2"
+      },
+      "profile": "balanced"
+    },
+    "evidence_status": "illustrative_not_executed"
+  },
+  {
+    "service_id": "managed-simulator-v1",
+    "label": "Inspect simulated outcomes",
+    "goal": "Simulate a one-qubit circuit with a Hadamard operation and Z measurement.",
+    "interpretation": "Inspect typed counts, probabilities, job status, and simulation configuration. Sampling may vary. This is bounded local statevector simulation, with no remote provider or physical QPU execution.",
+    "tool_name": "quantum_managed_simulator_v1",
+    "request": {
+      "circuit_ir": {
+        "measurements": [
+          {
+            "basis": "Z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        "operations": [
+          {
+            "gate": "h",
+            "targets": [
+              0
+            ]
+          }
+        ],
+        "qubits": 1,
+        "schema_version": "0.2"
+      },
+      "shots": 32,
+      "target": "rqm_statevector"
+    },
+    "unsupported_example": {
+      "circuit_ir": {
+        "measurements": [],
+        "operations": [],
+        "qubits": 17,
+        "schema_version": "0.2"
+      },
+      "shots": 32,
+      "target": "rqm_statevector"
+    },
+    "evidence_status": "illustrative_not_executed"
+  }
+]

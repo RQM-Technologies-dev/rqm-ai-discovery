@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-18T04:09:38+00:00",
+  "source_endpoint": "https://jobs.rqmtechnologies.com/mcp/plugins/quantum",
+  "source_tool": "list_buyer_jobs",
+  "source_arguments": {
+    "product": "quantum",
+    "surface": "buyer_job"
+  },
+  "schema_source": "tools/list -> list_buyer_jobs.outputSchema",
+  "source_timestamp": null,
+  "source_timestamp_note": "The catalog supplies no top-level source timestamp; observed_at is retrieval time, not deployment time.",
+  "quantum_installation": {
+    "name": "com.rqmtechnologies/studio",
+    "product": "quantum",
+    "url": "https://jobs.rqmtechnologies.com/mcp/studio",
+    "documentation_url": "https://www.rqmtechnologies.com/rqm-studio",
+    "discovery_state": "available; product capability catalog",
+    "execution_state": "available; Account Core enforces caller eligibility and purchase limits",
+    "production_activation": "active"
+  },
+  "installation_source": "https://jobs.rqmtechnologies.com/installation.json",
+  "sha256": {
+    "catalog.json": "10d5aea3265c886401ac2dd88f96cdbec6361c84e406944a95ab2e56326c0287",
+    "catalog-schema.json": "d522b8aeac5f1be6d54378c27175619bcc40e94741dfce5774e8ee4a197f2948",
+    "tools.json": "9a4ea3f47ecff32f3dacb53902b63f7c07cb206390f8b2959fae53a5ff05ebcc"
+  },
+  "verification": "Anonymous discovery only. No computation, quote, purchase, or hardware execution."
+}

@@ -1,0 +1,21 @@
+{
+  "canonical_repository": "https://github.com/RQM-Technologies-dev/rqm-ai-discovery",
+  "content_revision_sha256": "f1a396bd0174cd72e11a20693f49c90fb24cc78000cfa6fd91cbef0bfca335a4",
+  "input_sha256": {
+    "content/connection.md": "a3fe969e2de83bec554289b2e758d74895414f3c5fcdbb1992a1cf74635f4bae",
+    "content/record.json": "c257c8c109d05b604943f3cc0821fc91d7f5f988c01bfbe4ae1bc44b38fd6725",
+    "data/catalog-schema.json": "d522b8aeac5f1be6d54378c27175619bcc40e94741dfce5774e8ee4a197f2948",
+    "data/catalog.json": "10d5aea3265c886401ac2dd88f96cdbec6361c84e406944a95ab2e56326c0287",
+    "data/provenance.json": "e05d1b6100d6c0a277b40e864f640e586e184b9d0639fe0cc5fb0f12f2f28621",
+    "data/tools.json": "9a4ea3f47ecff32f3dacb53902b63f7c07cb206390f8b2959fae53a5ff05ebcc",
+    "scripts/build.py": "27ccc70a5650c9a4b28275c71a17c7761d5ee948cdae4c77c8fb9d8de4b65c1c",
+    "scripts/publish.py": "4672b54d0649ff868467ce1b4558609ca3ea13402034b6c619efc2dd4096e165",
+    "scripts/refresh.py": "22a7ba2cecfc52a3c6d2b9c630ea213474ec53ca8b913f5a70515930bcea95fc",
+    "scripts/smoke.py": "9c316b516af5bab2c5947b073f76f730cc5ff1cae47f8ab17533d6ae3cbfe81e",
+    "scripts/validate.py": "85ea5bbbc8bb848c6cf91a5b1e01cd02ef406862f54b7381d0ac49cc72a7be46",
+    "templates/app.js": "8cdf7a73d6602971f541d951d7e1450eff6f58192105730e5a29ff5c876fcdf1",
+    "templates/index.html": "2fba2e57238bc34c3fbe62fa9dca25e084b0e28a5d29b5095ff6e99894231d76",
+    "templates/style.css": "ff32aaf5878159ce810d98d836ec60371ce5fe494bc46b84a8b62c314f27ebc7"
+  },
+  "catalog_observed_at": "2026-10-18T04:09:38+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RQM Technologies LLC",
+  "url": "https://www.rqmtechnologies.com",
+  "sameAs": [
+    "https://huggingface.co/RQM-technologies-dev",
+    "https://github.com/RQM-Technologies-dev"
+  ]
+}
