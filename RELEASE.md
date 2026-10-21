@@ -15,8 +15,8 @@ only with attributable evidence.
 | Hugging Face publication | Public static Space RUNNING at commit `6962555ad71a07542bc67c6aeed7f22379cda67a`; all 17 published files match the reviewed `site/` bytes |
 | Official website cross-links | PR #71 merged; production footer and `llms.txt` verified with links to the Space and canonical source |
 | Search indexing | Not established |
-| Paid execution | Not performed |
-| Hardware execution | Not performed |
+| Paid execution | Initial static-hub publication performed none; separate 2026-10-21 Cursor operator check settled one quoted hardware execution |
+| Hardware execution | One Rigetti Cepheus 100-shot execution verified through actual Cursor web Chat on 2026-10-21; other targets only configured/discovered |
 
 Publication and a `production_live` source label are not proof of customer
 transactions or hardware readiness. Snapshot evidence revisions are preserved

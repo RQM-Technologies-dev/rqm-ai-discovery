@@ -1,20 +1,21 @@
 {
   "canonical_repository": "https://github.com/RQM-Technologies-dev/rqm-ai-discovery",
-  "content_revision_sha256": "4cab457da9de001c3ae48c120e34488a694d6485c7977067f001c84a8b73ed6e",
+  "content_revision_sha256": "d40ad8cc2641c4311114b343dd2487e6c52d5a857051b175ae8ba458e6e50ea2",
   "input_sha256": {
-    "content/connection.md": "a3fe969e2de83bec554289b2e758d74895414f3c5fcdbb1992a1cf74635f4bae",
-    "content/record.json": "c257c8c109d05b604943f3cc0821fc91d7f5f988c01bfbe4ae1bc44b38fd6725",
+    "content/connection.md": "d2358f8443f2f6e6b636ed361271e5c59a31778760b0583411f2785e69e43e55",
+    "content/hardware.md": "73791f46c8c7fd83f9556b291cc153c99bd15cb1544bf04c0c1ecb2fcdd3baa7",
+    "content/record.json": "588ef5a52221dcb8bd43cc4a490f4ae44b6d79d618adfa9994a7cac3bf035c70",
     "data/catalog-schema.json": "d522b8aeac5f1be6d54378c27175619bcc40e94741dfce5774e8ee4a197f2948",
     "data/catalog.json": "10d5aea3265c886401ac2dd88f96cdbec6361c84e406944a95ab2e56326c0287",
     "data/provenance.json": "e05d1b6100d6c0a277b40e864f640e586e184b9d0639fe0cc5fb0f12f2f28621",
     "data/tools.json": "9a4ea3f47ecff32f3dacb53902b63f7c07cb206390f8b2959fae53a5ff05ebcc",
-    "scripts/build.py": "8e3a37db9c8fabedda147588afb2e097e3e2fe4a2e588dc147241751116fd803",
+    "scripts/build.py": "e8ad2f4be554e4e18626ca7e1f49a08dfb30755b7c7c54ab75e3d00d65490d3a",
     "scripts/publish.py": "4672b54d0649ff868467ce1b4558609ca3ea13402034b6c619efc2dd4096e165",
     "scripts/refresh.py": "22a7ba2cecfc52a3c6d2b9c630ea213474ec53ca8b913f5a70515930bcea95fc",
     "scripts/smoke.py": "9c316b516af5bab2c5947b073f76f730cc5ff1cae47f8ab17533d6ae3cbfe81e",
     "scripts/validate.py": "85ea5bbbc8bb848c6cf91a5b1e01cd02ef406862f54b7381d0ac49cc72a7be46",
     "templates/app.js": "8cdf7a73d6602971f541d951d7e1450eff6f58192105730e5a29ff5c876fcdf1",
-    "templates/index.html": "dd921399b88c74b829df0a4b41d8283872c0885ef9b46ee4263a829a3d86d929",
+    "templates/index.html": "81dc74ddd9aeee562e2ee171ae9fc0b24f94f1a4ccf032a23ab296c0092beaef",
     "templates/style.css": "086efa974bec59baf515d6aa4ad0f592f1672ba1a00dfb980eade7315a0edf80"
   },
   "catalog_observed_at": "2026-10-18T04:09:38+00:00"
