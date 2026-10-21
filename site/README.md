@@ -15,13 +15,14 @@ tags:
 
 # Resonant Quantum Mechanics
 
-RQM Technologies LLC develops computational methods and software for quantum computing. Resonant Quantum Mechanics provides machine-accessible services for bounded circuit assurance, transformation, and local simulation.
+RQM Technologies LLC develops quantum computing software. Resonant Quantum Mechanics provides bounded circuit assurance, transformation and local simulation, plus an account-funded Amazon Braket QPU workflow with preparation, binding quotes, explicit spending approval and durable result retrieval.
 
 Public capability record, observed 2026-10-18T04:09:38+00:00.
 
 ## Start here
 
 - [Connection guide](connection.md)
+- [Physical QPU workflow and dated evidence](hardware.md)
 - [20 quantum capability descriptions](capabilities.md)
 - [Illustrative discovery examples](examples.md)
 - [Research and limitations](research.md)

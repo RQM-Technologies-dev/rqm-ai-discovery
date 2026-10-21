@@ -6,7 +6,7 @@
   "hf_profile": "https://huggingface.co/RQM-technologies-dev",
   "space": "https://huggingface.co/spaces/RQM-technologies-dev/resonant-quantum-mechanics",
   "endpoint": "https://jobs.rqmtechnologies.com/mcp/plugins/quantum",
-  "identity": "RQM Technologies LLC develops computational methods and software for quantum computing. Resonant Quantum Mechanics provides machine-accessible services for bounded circuit assurance, transformation, and local simulation.",
+  "identity": "RQM Technologies LLC develops quantum computing software. Resonant Quantum Mechanics provides bounded circuit assurance, transformation and local simulation, plus an account-funded Amazon Braket QPU workflow with preparation, binding quotes, explicit spending approval and durable result retrieval.",
   "research": "RQM's public mathematical work includes quaternion algebra, spinors, Bloch geometry, SU(2), and Quaternionic Spectral Geometry. Unit quaternions and complete SU(2) matrices encode the same single-rotation information. Any claimed software advantage requires evidence against equivalent baselines.",
   "references": [
     {"title": "RQM Core", "url": "https://github.com/RQM-Technologies-dev/rqm-core", "description": "Public quaternion, spinor, SU(2), and Bloch mathematics library."},

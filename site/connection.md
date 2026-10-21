@@ -12,11 +12,19 @@ https://jobs.rqmtechnologies.com/mcp/plugins/quantum
 ```
 
 Use the client's remote MCP connection interface and its supported RQM sign-in flow.
-Discovery is anonymous. Account operations require the service's existing OAuth or
+The canonical endpoint permits anonymous discovery. Account operations require the service's existing OAuth or
 RQM Account Core machine authentication. Keep credentials in the client's credential
 store, never in this repository, Hugging Face, a prompt, or a public configuration.
 If the client cannot complete the advertised authentication flow, stop and use
 [RQM's official documentation](https://www.rqmtechnologies.com/docs).
+
+### Cursor
+
+Use `https://jobs.rqmtechnologies.com/mcp/plugins/quantum/cursor` with public client `rqm-cursor-quantum`, no client secret, and scopes `jobs.read`, `jobs.run`, `balance.read`. Cursor requests OAuth during initialization. The canonical resource remains the quantum endpoint above. Cloud and local Cursor environments have separate connections; verify the account through a protected balance read in the actual Chat surface being used.
+
+The connector is free; computation uses credits purchased directly from RQM. An independent x402 wallet is not required for this branded prepaid connector. Generic Jobs/x402 routes are separate and must not be substituted to bypass a failed authorization.
+
+For physical QPU work, follow the [hardware preparation, binding quote and recovery workflow](hardware.md). The named-service instructions below apply to the separate software-analysis and simulation operations.
 
 ## 2. Discover for free
 
