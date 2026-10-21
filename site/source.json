@@ -1,9 +1,9 @@
 {
   "canonical_repository": "https://github.com/RQM-Technologies-dev/rqm-ai-discovery",
-  "content_revision_sha256": "4cab457da9de001c3ae48c120e34488a694d6485c7977067f001c84a8b73ed6e",
+  "content_revision_sha256": "8d15e0e055ab3db330863e7326116507095dedac6692d55cfdcf1b68b335b2fc",
   "input_sha256": {
-    "content/connection.md": "a3fe969e2de83bec554289b2e758d74895414f3c5fcdbb1992a1cf74635f4bae",
-    "content/record.json": "c257c8c109d05b604943f3cc0821fc91d7f5f988c01bfbe4ae1bc44b38fd6725",
+    "content/connection.md": "0b7d1ee9845d9c67bfa4e42884ad40ae06765d7c0c5126c3055d9f27717667e0",
+    "content/record.json": "b72cbbe74a0107023024b13ea90145febd7ac345be363766a504e50d6b8ea818",
     "data/catalog-schema.json": "d522b8aeac5f1be6d54378c27175619bcc40e94741dfce5774e8ee4a197f2948",
     "data/catalog.json": "10d5aea3265c886401ac2dd88f96cdbec6361c84e406944a95ab2e56326c0287",
     "data/provenance.json": "e05d1b6100d6c0a277b40e864f640e586e184b9d0639fe0cc5fb0f12f2f28621",
@@ -14,7 +14,7 @@
     "scripts/smoke.py": "9c316b516af5bab2c5947b073f76f730cc5ff1cae47f8ab17533d6ae3cbfe81e",
     "scripts/validate.py": "85ea5bbbc8bb848c6cf91a5b1e01cd02ef406862f54b7381d0ac49cc72a7be46",
     "templates/app.js": "8cdf7a73d6602971f541d951d7e1450eff6f58192105730e5a29ff5c876fcdf1",
-    "templates/index.html": "dd921399b88c74b829df0a4b41d8283872c0885ef9b46ee4263a829a3d86d929",
+    "templates/index.html": "eec5a5cd58138007b62d537237b245af32460069b204a65f4f9a86d7bade055c",
     "templates/style.css": "086efa974bec59baf515d6aa4ad0f592f1672ba1a00dfb980eade7315a0edf80"
   },
   "catalog_observed_at": "2026-10-18T04:09:38+00:00"

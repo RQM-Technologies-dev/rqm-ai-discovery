@@ -6,16 +6,43 @@
   "hf_profile": "https://huggingface.co/RQM-technologies-dev",
   "space": "https://huggingface.co/spaces/RQM-technologies-dev/resonant-quantum-mechanics",
   "endpoint": "https://jobs.rqmtechnologies.com/mcp/plugins/quantum",
-  "identity": "RQM Technologies LLC develops computational methods and software for quantum computing. Resonant Quantum Mechanics provides machine-accessible services for bounded circuit assurance, transformation, and local simulation.",
+  "identity": "RQM Technologies LLC provides quantum circuit preparation, bounded circuit assurance, local simulation, and an authenticated path to supported physical QPU experiments through Amazon Braket. Hardware execution requires current device eligibility, a fresh exact quote, prepaid RQM credits and owner-approved spending authority.",
   "research": "RQM's public mathematical work includes quaternion algebra, spinors, Bloch geometry, SU(2), and Quaternionic Spectral Geometry. Unit quaternions and complete SU(2) matrices encode the same single-rotation information. Any claimed software advantage requires evidence against equivalent baselines.",
   "references": [
-    {"title": "RQM Core", "url": "https://github.com/RQM-Technologies-dev/rqm-core", "description": "Public quaternion, spinor, SU(2), and Bloch mathematics library."},
-    {"title": "RQM Technical Canon v2", "url": "https://github.com/RQM-Technologies-dev/rqm-core/blob/main/RQM_TECHNICAL_CANON_V2.md", "description": "Standard-compatible representations and evidence requirements for technical claims."},
-    {"title": "Quaternionic Spectral Geometry", "url": "https://github.com/RQM-Technologies-dev/quaternionic-spectral-geometry", "description": "Public research scope and explicit distinctions between established mathematics and exploratory models."}
+    {
+      "title": "RQM Core",
+      "url": "https://github.com/RQM-Technologies-dev/rqm-core",
+      "description": "Public quaternion, spinor, SU(2), and Bloch mathematics library."
+    },
+    {
+      "title": "RQM Technical Canon v2",
+      "url": "https://github.com/RQM-Technologies-dev/rqm-core/blob/main/RQM_TECHNICAL_CANON_V2.md",
+      "description": "Standard-compatible representations and evidence requirements for technical claims."
+    },
+    {
+      "title": "Quaternionic Spectral Geometry",
+      "url": "https://github.com/RQM-Technologies-dev/quaternionic-spectral-geometry",
+      "description": "Public research scope and explicit distinctions between established mathematics and exploratory models."
+    }
   ],
   "examples": [
-    {"service_id": "openqasm3-preflight-v1", "label": "Check before compilation", "goal": "Assess a small OpenQASM 3 program before downstream compilation.", "interpretation": "Inspect the returned go, no_go, or unsupported outcome, normalized source, warnings, and evidence. A go verdict applies only within the documented verifier scope; it is not hardware readiness."},
-    {"service_id": "verified-circuit-optimization-v1", "label": "Optimize with preservation", "goal": "Ask for a smaller circuit while retaining the original unless preservation is verified.", "interpretation": "Inspect outcome, candidate_withheld, fallback_status, original_hash, returned_hash, circuit, and report. Adopt a candidate only when the completed result verifies preservation. A fallback or unsupported result is not a verified optimization."},
-    {"service_id": "managed-simulator-v1", "label": "Inspect simulated outcomes", "goal": "Simulate a one-qubit circuit with a Hadamard operation and Z measurement.", "interpretation": "Inspect typed counts, probabilities, job status, and simulation configuration. Sampling may vary. This is bounded local statevector simulation, with no remote provider or physical QPU execution."}
+    {
+      "service_id": "openqasm3-preflight-v1",
+      "label": "Check before compilation",
+      "goal": "Assess a small OpenQASM 3 program before downstream compilation.",
+      "interpretation": "Inspect the returned go, no_go, or unsupported outcome, normalized source, warnings, and evidence. A go verdict applies only within the documented verifier scope; it is not hardware readiness."
+    },
+    {
+      "service_id": "verified-circuit-optimization-v1",
+      "label": "Optimize with preservation",
+      "goal": "Ask for a smaller circuit while retaining the original unless preservation is verified.",
+      "interpretation": "Inspect outcome, candidate_withheld, fallback_status, original_hash, returned_hash, circuit, and report. Adopt a candidate only when the completed result verifies preservation. A fallback or unsupported result is not a verified optimization."
+    },
+    {
+      "service_id": "managed-simulator-v1",
+      "label": "Inspect simulated outcomes",
+      "goal": "Simulate a one-qubit circuit with a Hadamard operation and Z measurement.",
+      "interpretation": "Inspect typed counts, probabilities, job status, and simulation configuration. Sampling may vary. This is bounded local statevector simulation, with no remote provider or physical QPU execution."
+    }
   ]
 }
